@@ -1,25 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Nathan from './Components/Nathan';
-import Home from './Components/Home';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Components
+import App from "./App";
+import About from "./Components/About";
+import Home from "./Components/Home";
+import Work from "./Components/Work";
+import Research from "./Components/Research";
+import Contact from "./Components/Contact";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/" element={<Nathan />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<App />}>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/work" element={<Work />}></Route>
+          <Route path="/research" element={<Research />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 
