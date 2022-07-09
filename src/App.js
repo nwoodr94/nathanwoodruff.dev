@@ -36,7 +36,6 @@ function App() {
         sx={{
           textAlign: "center",
           height: "80vh",
-          border: "1px solid blue",
         }}
       >
         <Box
@@ -66,29 +65,29 @@ function App() {
                 maxWidth: "80vw",
               }}
             >
-              <Button dense={true}>
+              <Button dense="true">
                 <Link to="/">
                   <Typography variant="caption" sx={{ padding: "0.25rem" }}>
                     Home
                   </Typography>
                 </Link>
               </Button>
-              <Button dense={true}>
+              <Button dense="true">
                 <Link to="/about">
                   <Typography variant="caption">About</Typography>
                 </Link>
               </Button>
-              <Button dense={true}>
+              <Button dense="true">
                 <Link to="/work">
                   <Typography variant="caption">Work</Typography>
                 </Link>
               </Button>
-              <Button dense={true}>
+              <Button dense="true">
                 <Link to="/research">
                   <Typography variant="caption">Research</Typography>
                 </Link>
               </Button>
-              <Button dense={true}>
+              <Button dense="true">
                 <Link to="/contact">
                   <Typography variant="caption">Contact</Typography>
                 </Link>

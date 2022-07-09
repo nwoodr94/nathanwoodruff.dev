@@ -1,14 +1,16 @@
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
+import mountain from "../Assets/mountain.jpg";
 
 function About() {
   return (
     <Container
       sx={{
         width: "500px",
-        height: "25vh",
+        height: "50vh",
         maxWidth: "80vw",
         textAlign: "left",
+        overflowY: "auto",
       }}
     >
       <Typography variant="subtitle" component="h3">
@@ -30,6 +32,17 @@ function About() {
         Before becoming an engineer, I spent two years turning wrenches on the
         outskirts of Austin, TX for a semiconductor tooling manufacturer.
       </Typography>
+      <br />
+      <Container sx={{ textAlign: "center" }}>
+        <Box
+          component="img"
+          sx={{
+            height: 275,
+            width: "95%",
+          }}
+          src={mountain}
+        />
+      </Container>
     </Container>
   );
 }
