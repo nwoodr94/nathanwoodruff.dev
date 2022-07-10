@@ -11,7 +11,7 @@ function Work() {
         height: "50vh",
         maxWidth: "80vw",
         textAlign: "left",
-        overflowY: "auto",
+        overflowY: "scroll",
       }}
     >
       <Typography variant="subtitle" component="h3">
@@ -29,14 +29,14 @@ function Work() {
         <br />
         <br />
         The focus of my work at the INL is developing leading edge digital twin
-        capabilities for industry stakeholders.
+        capabilities.
         <br />
         <br />
         <b>Digital Twins</b>
         <br />A digital twin is a virtual representation of some complex
         engineering system. These twins integrate data from a variety of
         sources, and in real-time enable researchers to interact with, observe,
-        and make informed decisions with these systems.
+        and make informed decisions with the systems they represent.
       </Typography>
       <Box
         sx={{

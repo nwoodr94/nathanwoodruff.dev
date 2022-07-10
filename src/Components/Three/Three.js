@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 
-function Three(props) {
+function Three() {
   const mesh = useRef();
   const [hovered, hover] = useState(false);
   const [clicked, click] = useState(false);
@@ -15,14 +15,15 @@ function Three(props) {
     <mesh
       ref={mesh}
       scale={clicked ? 1.2 : 1}
-      onClick={(event) => click(!clicked)}
+      onClick={() => click(!clicked)}
       onPointerOver={() => hover(true)}
       onPointerOut={() => hover(false)}
     >
-      <ambientLight intensity={5} />
-      <pointLight position={[-1, -1, -1]} />
+      <ambientLight intensity={1} />
+      <directionalLight />
+      <pointLight position={[10, 10, 10]} />
       <boxGeometry args={[2.5, 2.5, 2.5]} />
-      <meshStandardMaterial color={hovered ? "orange" : "limegreen"} />
+      <meshStandardMaterial color={hovered ? "gray" : "white"} />
     </mesh>
   );
 }

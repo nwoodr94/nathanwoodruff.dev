@@ -9,7 +9,6 @@ import App from "./App";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import Work from "./Components/Work";
-import Research from "./Components/Research";
 import Contact from "./Components/Contact";
 
 // Fonts
@@ -27,7 +26,6 @@ root.render(
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/work" element={<Work />}></Route>
-          <Route path="/research" element={<Research />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Route>
       </Routes>
