@@ -1,4 +1,10 @@
+// React
+import React from "react";
+
+// Material
 import { Container, ListItemButton, ListItem, Typography } from "@mui/material";
+
+// Icons
 import Icon from "@mdi/react";
 import {
   mdiGithub,
@@ -6,7 +12,6 @@ import {
   mdiInstagram,
   mdiBeehiveOutline,
 } from "@mdi/js";
-import React from "react";
 
 function Contact() {
   return (
@@ -19,9 +24,10 @@ function Contact() {
         overflowY: "auto",
       }}
     >
-      <Typography variant="subtitle" component="h3">
+      <Typography variant="subtitle2" component="h3">
         <b>Contact</b>
       </Typography>
+      <br />
       <Container sx={{ textAlign: "center" }}>
         <ListItemButton
           component="a"
@@ -30,7 +36,9 @@ function Contact() {
         >
           <Icon path={mdiGithub} size={1} />
           <ListItem sx={{ display: "flex", justifyContent: "center" }}>
-            <Typography variant="caption">REVIEW MY WORK ON GITHUB</Typography>
+            <Typography variant="caption" sx={{ fontSize: "0.70rem" }}>
+              REVIEW MY WORK ON GITHUB
+            </Typography>
           </ListItem>
         </ListItemButton>
         <ListItemButton
@@ -40,7 +48,7 @@ function Contact() {
         >
           <Icon path={mdiLinkedin} size={1} />
           <ListItem sx={{ display: "flex", justifyContent: "center" }}>
-            <Typography variant="caption">
+            <Typography variant="caption" sx={{ fontSize: "0.70rem" }}>
               JOIN MY NETWORK ON LINKEDIN
             </Typography>
           </ListItem>
@@ -52,7 +60,9 @@ function Contact() {
         >
           <Icon path={mdiInstagram} size={1} />
           <ListItem sx={{ display: "flex", justifyContent: "center" }}>
-            <Typography variant="caption">FOLLOW ME ON INSTAGRAM</Typography>
+            <Typography variant="caption" sx={{ fontSize: "0.70rem" }}>
+              FOLLOW ME ON INSTAGRAM
+            </Typography>
           </ListItem>
         </ListItemButton>
         <ListItemButton
@@ -62,7 +72,7 @@ function Contact() {
         >
           <Icon path={mdiBeehiveOutline} size={1} />
           <ListItem sx={{ display: "flex", justifyContent: "center" }}>
-            <Typography variant="caption">
+            <Typography variant="caption" sx={{ fontSize: "0.70rem" }}>
               BECOME A DISCIPLE OF JESUS CHRIST
             </Typography>
           </ListItem>

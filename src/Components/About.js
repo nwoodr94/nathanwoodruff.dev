@@ -1,5 +1,10 @@
-import { Box, Container, Typography } from "@mui/material";
+// React
 import React from "react";
+
+// Material
+import { Box, Container, Typography } from "@mui/material";
+
+// Assets
 import mountain from "../Assets/mountain.jpg";
 
 function About() {
@@ -13,7 +18,7 @@ function About() {
         overflowY: "auto",
       }}
     >
-      <Typography variant="subtitle" component="h3">
+      <Typography variant="subtitle2" component="h3">
         <b>About Me</b>
       </Typography>
       <br />
@@ -30,7 +35,7 @@ function About() {
         <br />
         <br />
         Before becoming an engineer, I spent two years turning wrenches on the
-        outskirts of Austin, TX for a semiconductor tooling manufacturer.
+        outskirts of Austin, TX, learning how things are made.
       </Typography>
       <br />
       <Container sx={{ textAlign: "center" }}>

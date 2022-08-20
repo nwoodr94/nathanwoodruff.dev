@@ -1,9 +1,10 @@
+// Hooks
 import { useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 
 function Three() {
   const mesh = useRef();
-  const [hovered, hover] = useState(false);
+  const [, hover] = useState(false);
   const [clicked, click] = useState(false);
 
   useFrame(() => {
@@ -14,7 +15,7 @@ function Three() {
   return (
     <mesh
       ref={mesh}
-      scale={clicked ? 1.2 : 1}
+      scale={clicked ? 1 : 1.2}
       onClick={() => click(!clicked)}
       onPointerOver={() => hover(true)}
       onPointerOut={() => hover(false)}
@@ -23,7 +24,7 @@ function Three() {
       <directionalLight />
       <pointLight position={[10, 10, 10]} />
       <boxGeometry args={[2.5, 2.5, 2.5]} />
-      <meshStandardMaterial color={hovered ? "gray" : "white"} />
+      <meshStandardMaterial color={"#82ca9d"} />
     </mesh>
   );
 }

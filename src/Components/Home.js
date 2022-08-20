@@ -12,7 +12,7 @@ function Home() {
         overflowY: "auto",
       }}
     >
-      <Typography variant="subtitle" component="h3">
+      <Typography variant="subtitle2" component="h3">
         Welcome to my website
       </Typography>
       <br />

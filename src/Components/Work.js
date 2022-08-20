@@ -1,7 +1,41 @@
+// React
+import React from "react";
+
+// Material
 import { Box, Container, Typography } from "@mui/material";
-import React, { useEffect } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+
+// ThreeJS
+import { Canvas } from "@react-three/fiber";
 import Three from "./Three/Three";
+
+// Recharts
+import {
+  CartesianGrid,
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  ResponsiveContainer,
+} from "recharts";
+
+const data = [
+  {
+    name: "a",
+    uv: 4000,
+  },
+  {
+    name: "b",
+    uv: 3000,
+  },
+  {
+    name: "c",
+    uv: 5000,
+  },
+  {
+    name: "d",
+    uv: 7000,
+  },
+];
 
 function Work() {
   return (
@@ -14,7 +48,7 @@ function Work() {
         overflowY: "scroll",
       }}
     >
-      <Typography variant="subtitle" component="h3">
+      <Typography variant="subtitle2" component="h3">
         <b>Work</b>
       </Typography>
       <br />
@@ -25,11 +59,10 @@ function Work() {
         <br />
         I build applications that enable researchers to do novel and interesting
         things with energy systems. I'm a full-stack developer, and so I do
-        everything from apps to servers, and containers to cloud.
+        everything from apps to servers, and containers to clouds.
         <br />
         <br />
-        The focus of my work at the INL is developing leading edge digital twin
-        capabilities.
+        The emphasis of our work at the INL are digital twin systems.
         <br />
         <br />
         <b>Digital Twins</b>
@@ -48,6 +81,31 @@ function Work() {
         <Canvas>
           <Three />
         </Canvas>
+      </Box>
+      <br />
+      <Typography variant="caption" component="p">
+        The value of this work is realized through real-time analytics like
+        machine learning and other physics based simulation capabilities.
+      </Typography>
+
+      <br />
+      <Box
+        sx={{
+          height: "150px",
+          margin: "0 auto",
+        }}
+      >
+        <ResponsiveContainer>
+          <LineChart
+            data={data}
+            margin={{ top: 0, right: 25, bottom: 0, left: -50 }}
+          >
+            <CartesianGrid strokeDasharray={1} />
+            <XAxis tick="" />
+            <YAxis tick="" />
+            <Line type="monotone" dataKey="uv" stroke="gray" />
+          </LineChart>
+        </ResponsiveContainer>
       </Box>
     </Container>
   );

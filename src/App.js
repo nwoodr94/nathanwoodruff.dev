@@ -1,4 +1,10 @@
+// React
 import React from "react";
+
+// Hooks
+import { useState, useEffect } from "react";
+
+// Material
 import {
   AppBar,
   Box,
@@ -7,7 +13,11 @@ import {
   Container,
   Typography,
   Stack,
+  Toolbar,
+  Switch,
 } from "@mui/material";
+
+// Router
 import { Outlet, Link } from "react-router-dom";
 
 // Themes
@@ -15,23 +25,30 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { lightTheme, darkTheme } from "./Themes/Theme";
 import { ThemeProvider } from "@mui/material/styles";
 
+// Styles
+import "./App.css";
+
 function App() {
+  let [theme, setTheme] = useState(false);
+  let [fade, setFade] = useState(false);
+
+  useEffect(() => {
+    setFade(true);
+  }, []);
+
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={theme ? lightTheme : darkTheme}>
       <CssBaseline />
       <Box>
-        <AppBar position="static" color="primary">
-          <Typography
-            variant="h1"
-            sx={{
-              fontWeight: "bold",
-              fontSize: "1.5rem",
-              margin: ".75rem",
-            }}
-          >
-            Nathan Woodruff
-          </Typography>
+        <AppBar position="static">
+          <Toolbar>
+            <Typography variant="h6" component="h2" sx={{ flexGrow: 1 }}>
+              Nathan Woodruff
+            </Typography>
+            <Switch size="small" onChange={() => setTheme(!theme)} />
+          </Toolbar>
         </AppBar>
+
         <Container
           sx={{
             textAlign: "center",
@@ -47,14 +64,18 @@ function App() {
             }}
           >
             <Stack>
-              <Box>
-                <b>Hi, I'm Nathan</b>
+              <Box sx={{ paddingTop: "10vh" }}>
+                <Box className={fade ? "fadeIn" : "transparent"}>
+                  <Typography variant="subtitle">Hi, I'm Nathan</Typography>
+                </Box>
                 <br />
                 <br />
-                I'm a software engineer based in Idaho Falls{" "}
-                <span role="img" aria-label="mountain">
-                  {String.fromCodePoint(0x1f3de)}
-                </span>
+                <Typography variant="subtitle2">
+                  I'm a software engineer based in Idaho Falls{" "}
+                  <span role="img" aria-label="mountain">
+                    {String.fromCodePoint(0x1f3de)}
+                  </span>
+                </Typography>
               </Box>
               <br />
               <List
@@ -63,32 +84,47 @@ function App() {
                   alignItems: "center",
                   width: "500px",
                   maxWidth: "80vw",
+                  margin: "0 auto",
                 }}
               >
-                <Button dense="true">
-                  <Link to="/">
+                <Button dense="true" sx={{ padding: 0 }}>
+                  <Link
+                    to="/"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
                     <Typography variant="caption" sx={{ padding: "0.25rem" }}>
                       Home
                     </Typography>
                   </Link>
                 </Button>
-                <Button dense="true">
-                  <Link to="/about">
+                <Button dense="true" sx={{ padding: 0 }}>
+                  <Link
+                    to="/about"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
                     <Typography variant="caption">About</Typography>
                   </Link>
                 </Button>
-                <Button dense="true">
-                  <Link to="/work">
+                <Button dense="true" sx={{ padding: 0 }}>
+                  <Link
+                    to="/work"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
                     <Typography variant="caption">Work</Typography>
                   </Link>
                 </Button>
-                <Button dense="true">
-                  <Link to="/contact">
+                <Button dense="true" sx={{ padding: 0 }}>
+                  <Link
+                    to="/contact"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
                     <Typography variant="caption">Contact</Typography>
                   </Link>
                 </Button>
               </List>
-              <Outlet />
+              <Container sx={{ padding: "1rem" }}>
+                <Outlet />
+              </Container>
             </Stack>
           </Box>
         </Container>

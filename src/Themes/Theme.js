@@ -1,4 +1,5 @@
-import { createTheme, create } from "@mui/material/styles";
+// Material
+import { createTheme } from "@mui/material/styles";
 
 let darkTheme = createTheme({
   palette: {
