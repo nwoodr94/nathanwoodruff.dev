@@ -67,7 +67,7 @@ function Contact() {
         </ListItemButton>
         <ListItemButton
           component="a"
-          href="https://www.churchofjesuschrist.org/comeuntochrist/believe/book-of-mormon"
+          href="https://www.churchofjesuschrist.org/comeuntochrist/believe/jesus"
           target="_blank"
         >
           <Icon path={mdiBeehiveOutline} size={1} />

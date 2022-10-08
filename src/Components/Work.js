@@ -53,23 +53,23 @@ function Work() {
       </Typography>
       <br />
       <Typography variant="caption" component="p">
-        I'm a software engineer at the Idaho National Laboratory, a United
-        States research facility.
+        I'm a digital systems architect at the Idaho National Laboratory, a Department of Energy laboratory.
         <br />
         <br />
-        I build applications that enable researchers to do novel and interesting
-        things with energy systems. I'm a full-stack developer, and so I do
+        The emphasis of my work at the INL are digital twin applications, especially involving energy systems. I've built applications for nuclear reactors, batteries, hydroelectric assets like turbines and dams, as well as for our lab-wide <a href="https://inl.gov/net-zero/" target="_blank" rel="noreferrer" style={{color: "#82ca9d"}}>Net Zero</a> initiative.    
+        <br />
+        <br />
+        <Typography variant="caption" component="p">
+        I'm trained as a full-stack developer, and so I do
         everything from apps to servers, and containers to clouds.
-        <br />
-        <br />
-        The emphasis of our work at the INL are digital twin systems.
-        <br />
+        </Typography>
         <br />
         <b>Digital Twins</b>
-        <br />A digital twin is a virtual representation of some complex
+        <br />
+        A digital twin is a virtual representation of some complex
         engineering system. These twins integrate data from a variety of
         sources, and in real-time enable researchers to interact with, observe,
-        and make informed decisions with the systems they represent.
+        and make informed decisions about the physical systems they represent.
       </Typography>
       <Box
         sx={{
@@ -84,8 +84,8 @@ function Work() {
       </Box>
       <br />
       <Typography variant="caption" component="p">
-        The value of this work is realized through real-time analytics like
-        machine learning and other physics based simulation capabilities.
+        The value of this work is realized through real-time and predictive analytics like
+        machine learning, physics based modeling, and even mixed reality interactions.
       </Typography>
 
       <br />

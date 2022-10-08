@@ -35,18 +35,22 @@ function About() {
         <br />
         <br />
         Before becoming an engineer, I spent two years turning wrenches on the
-        outskirts of Austin, TX, learning how things are made.
+        outskirts of Austin, TX, learning how semiconductors are made.
+        <br />
+        <br />
+        I serve as First Counselor to the Elder's Quorum. This religious service includes leadership, philanthropy, volunteer work, teaching classes, and emulating Jesus Christ alongside other adult men in the Idaho Falls area.
       </Typography>
       <br />
-      <Container sx={{ textAlign: "center" }}>
+      <Container sx={{ textAlign: "center", padding: 0 }}>
         <Box
           component="img"
           sx={{
             height: 275,
-            width: "95%",
+            width: "90%",
           }}
           src={mountain}
         />
+        <Typography variant="caption" component="p">The Grand Teton, 2021</Typography>
       </Container>
     </Container>
   );

@@ -25,7 +25,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cache": "aws cloudfront create-invalidation --distribution-id E1C93WRRGJEZI9 --paths \"/*\"",
+    "cloud": "aws s3 sync build/ s3://nathanwoodruff.dev --acl public-read --cache-control 604800 --metadata-directive REPLACE",
+    "deploy": "npm run build && npm run cloud && npm run cache"
   },
   "eslintConfig": {
     "extends": [

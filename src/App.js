@@ -29,7 +29,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import "./App.css";
 
 function App() {
-  let [theme, setTheme] = useState(false);
+  let [theme, setTheme] = useState(true);
   let [fade, setFade] = useState(false);
 
   useEffect(() => {
