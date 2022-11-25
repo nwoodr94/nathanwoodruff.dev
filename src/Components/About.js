@@ -45,8 +45,8 @@ function About() {
         <Box
           component="img"
           sx={{
-            height: 275,
-            width: "90%",
+            height: 235,
+            width: "100%",
           }}
           src={mountain}
         />
