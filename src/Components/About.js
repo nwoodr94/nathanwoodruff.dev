@@ -38,7 +38,7 @@ function About() {
         outskirts of Austin, TX, learning how semiconductors are made.
         <br />
         <br />
-        I serve as First Counselor to the Elder's Quorum. This religious service includes leadership, philanthropy, volunteer work, teaching classes, and emulating Jesus Christ alongside other adult men in the Idaho Falls area.
+        I serve as First Counselor to the Elder's Quorum. This religious service includes leadership, philanthropy, volunteer work, teaching classes, and worshipping Jesus Christ alongside other adult men in the Idaho Falls area.
       </Typography>
       <br />
       <Container sx={{ textAlign: "center", padding: 0 }}>
