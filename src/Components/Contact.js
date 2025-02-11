@@ -43,7 +43,7 @@ function Contact() {
         </ListItemButton>
         <ListItemButton
           component="a"
-          href="https://linkedin.com/in/nwoodr94"
+          href="https://linkedin.com/in/n100"
           target="_blank"
         >
           <Icon path={mdiLinkedin} size={1} />
