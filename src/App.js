@@ -71,7 +71,7 @@ function App() {
                 <br />
                 <br />
                 <Typography variant="subtitle2">
-                  I'm a software engineer based in Idaho Falls{" "}
+                  I'm a software engineer based in Austin{" "}
                   <span role="img" aria-label="mountain">
                     {String.fromCodePoint(0x1f3de)}
                   </span>
