@@ -28,8 +28,11 @@ import { ThemeProvider } from "@mui/material/styles";
 // Styles
 import "./App.css";
 
+// Assets
+import texas from "../src/Assets/texas.png";
+
 function App() {
-  let [theme, setTheme] = useState(true);
+  let [theme, setTheme] = useState(false);
   let [fade, setFade] = useState(false);
 
   useEffect(() => {
@@ -70,11 +73,17 @@ function App() {
                 </Box>
                 <br />
                 <br />
-                <Typography variant="subtitle2">
-                  I'm a software engineer based in Austin{" "}
-                  <span role="img" aria-label="mountain">
-                    {String.fromCodePoint(0x1f3de)}
-                  </span>
+                <Typography variant="subtitle2" sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                  I'm a software engineer based in Austin
+                  <Box
+          component="img"
+          sx={{
+            padding: .2,
+            height: 25,
+            width: 25,
+          }}
+          src={texas}
+        />
                 </Typography>
               </Box>
               <br />

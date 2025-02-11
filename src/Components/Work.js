@@ -56,19 +56,18 @@ function Work() {
         I'm a digital systems architect at the Idaho National Laboratory, a Department of Energy laboratory.
         <br />
         <br />
-        The emphasis of my work at the INL are digital twin applications, especially involving energy systems. I've built applications for nuclear reactors, batteries, hydroelectric assets like turbines and dams, as well as for our lab-wide <a href="https://inl.gov/net-zero/" target="_blank" rel="noreferrer" style={{color: "#82ca9d"}}>Net Zero</a> initiative.    
+        The emphasis of my work at the INL are digital twin applications, especially involving energy systems. I've built applications for nuclear reactors, batteries, hydroelectric assets like turbines and dams, as well as for our lab-wide Net Zero initiative. Best of all, everything is <a href="https://github.com/idaholab" target="_blank" rel="noreferrer" style={{color: "#82ca9d"}}>open-source</a>.
         <br />
         <br />
         <Typography variant="caption" component="p">
-        I'm trained as a full-stack developer, and so I do
-        everything from apps to servers, and containers to clouds.
+        I'm trained as a full-stack developer, and so I do everything from apps to servers, and containers to cloud. My code and infrastructure has attracted more than $1 million in new revenue to the laboratory.
         </Typography>
         <br />
         <b>Digital Twins</b>
         <br />
-        A digital twin is a virtual representation of some complex
+        A digital twin is a virtual replica of some complex
         engineering system. These twins integrate data from a variety of
-        sources, and in real-time enable researchers to interact with, observe,
+        disparate sources, and in real-time enable researchers to interact with, observe,
         and make informed decisions about the physical systems they represent.
       </Typography>
       <Box
@@ -85,7 +84,7 @@ function Work() {
       <br />
       <Typography variant="caption" component="p">
         The value of this work is realized through real-time and predictive analytics like
-        machine learning, physics based modeling, and even mixed reality interactions.
+        machine learning, physics based modeling, and even autonomous operations.
       </Typography>
 
       <br />
